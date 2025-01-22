@@ -43,6 +43,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Use CORS
+app.UseCors("AllowSwagger");
+
+app.UseRouting();
+
 app.UseMiddleware<ErrorHandlingMiddleware>();
 
 app.UseIpRateLimiting();
@@ -50,9 +55,6 @@ app.UseIpRateLimiting();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
-// Use CORS
-app.UseCors("AllowSwagger");
 
 app.MapControllers();
 

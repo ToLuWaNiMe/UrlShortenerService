@@ -30,11 +30,11 @@ namespace UrlShortenerService.Controllers
             try
             {
                 var longUrl = await _service.GetOriginalUrlWithCacheAsync(shortUrl);
-                return Redirect(longUrl);
+                return Ok(new { longUrl });
             }
-            catch
+            catch (Exception ex)
             {
-                return NotFound("URL not found");
+                return NotFound(new { message = ex.Message });
             }
         }
 
