@@ -92,7 +92,7 @@ The `UrlMappings` table structure:
    ``
 
 4. Access the API via:
-   - Swagger UI: `http://localhost:8080/swagger`
+   - Swagger UI: `http://localhost:7141/swagger`
 
 ---
 
@@ -112,7 +112,7 @@ The `UrlMappings` table structure:
 ---
 
 ## Testing
-1. Access the Swagger UI at `http://localhost:8080/swagger`.
+1. Access the Swagger UI at `http://localhost:7141/swagger`.
 2. Test each endpoint:
    - **POST /shorten**: Provide a valid long URL and check the response.
    - **GET /{shortUrl}**: Use the returned short URL and check redirection.
@@ -137,7 +137,7 @@ Follow these steps to test on Swagger:
      ```
 
 2. **Open Swagger UI**:
-   - Navigate to `http://localhost:8080/swagger` in your browser.
+   - Navigate to `http://localhost:7141/swagger` in your browser.
 
 3. **Test the Endpoints**:
    - **POST /shorten**:
