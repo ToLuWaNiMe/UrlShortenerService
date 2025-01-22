@@ -38,7 +38,6 @@ namespace UrlShortenerService.Controllers
             }
         }
 
-
         [HttpGet("stats/{shortUrl}")]
         public async Task<IActionResult> GetUrlStats(string shortUrl)
         {
