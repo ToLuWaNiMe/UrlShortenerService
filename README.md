@@ -75,7 +75,6 @@ The `UrlMappings` table structure:
 ## How to Run Locally
 ### Prerequisites
 - Install [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)
-- Install [Docker](https://www.docker.com/)
 
 ### Steps
 1. Clone the repository:
