@@ -71,6 +71,14 @@ The `UrlMappings` table structure:
 | `AccessCount`  | Integer      | Number of times accessed    |
 
 ---
+CREATE TABLE UrlMappings (
+  Id int NOT NULL IDENTITY(1,1) PRIMARY KEY,
+  LongUrl nvarchar(max) NOT NULL,
+  ShortUrl nvarchar(max) NOT NULL,
+  CreatedAt datetime2 NOT NULL,
+  AccessCount int NOT NULL
+);
+
 
 ## How to Run Locally
 ### Prerequisites
