@@ -49,7 +49,6 @@ This project is a simple URL Shortening service built with **.NET/C#**. It allow
        "accessCount": 10
      }
      ```
-
 ---
 
 ## Technology Stack
